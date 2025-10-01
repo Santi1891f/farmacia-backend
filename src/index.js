@@ -9,7 +9,7 @@ const PORT = 3000;
 
 app.use(express.json());
 
-// Ejemplo: traer todos los productos
+
 app.get('/productos', (req, res) => {
   const sql = 'SELECT * FROM productos';
   db.query(sql, (err, results) => {
